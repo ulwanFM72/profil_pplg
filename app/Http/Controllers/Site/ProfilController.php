@@ -10,7 +10,7 @@ class ProfilController extends Controller
     public function __invoke()
     {
         return view('site.profil', [
-            'program' => ProgramKeahlian::with(['kepala', 'sejarah.timeline'])->firstOrFail(),
+            'program' => ProgramKeahlian::with(['kepala', 'sejarah.timeline', 'riwayatKepala'])->firstOrFail(),
         ]);
     }
 }
