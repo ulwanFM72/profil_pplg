@@ -15,7 +15,7 @@ class HomeController extends Controller
             'labs' => Laboratorium::aktif()->latest()->take(3)->get(),
             'assets' => Asset::latest()->take(4)->get(),
             'galeri' => Galeri::latest()->take(6)->get(),
-            'keunggulan' => config('site.keunggulan'),
+            'keunggulan' => \App\Models\Keunggulan::aktif()->get(),
         ]);
     }
 }

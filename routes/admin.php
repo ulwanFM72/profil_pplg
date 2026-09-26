@@ -1,7 +1,18 @@
 <?php
 
-use App\Http\Controllers\Admin\{AngkatanController, AssetController, DashboardController, GaleriController,
-    LaboratoriumController, LoginController, ProfilController, SejarahController, StatistikController, TimelineController};
+use App\Http\Controllers\Admin\{
+    AngkatanController,
+    AssetController,
+    DashboardController,
+    GaleriController,
+    KeunggulanController,
+    LaboratoriumController,
+    LoginController,
+    ProfilController,
+    SejarahController,
+    StatistikController,
+    TimelineController
+};
 use Illuminate\Support\Facades\Route;
 
 Route::prefix('admin')->name('admin.')->group(function () {
@@ -19,14 +30,17 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::get('sejarah', [SejarahController::class, 'edit'])->name('sejarah.edit');
         Route::put('sejarah', [SejarahController::class, 'update'])->name('sejarah.update');
 
-        foreach ([
-            'timeline' => TimelineController::class,
-            'laboratorium' => LaboratoriumController::class,
-            'asset' => AssetController::class,
-            'galeri' => GaleriController::class,
-            'angkatan' => AngkatanController::class,
-            'statistik' => StatistikController::class,
-        ] as $uri => $controller) {
+        foreach (
+            [
+                'timeline' => TimelineController::class,
+                'laboratorium' => LaboratoriumController::class,
+                'asset' => AssetController::class,
+                'galeri' => GaleriController::class,
+                'angkatan' => AngkatanController::class,
+                'statistik' => StatistikController::class,
+                'keunggulan' => KeunggulanController::class,
+            ] as $uri => $controller
+        ) {
             Route::resource($uri, $controller)->except('show');
         }
     });

@@ -9,6 +9,7 @@
         ['admin.galeri.index', 'Galeri', 'galeri'],
         ['admin.angkatan.index', 'Angkatan', 'angkatan'],
         ['admin.statistik.index', 'Statistik', 'statistik'],
+        ['admin.keunggulan.index', 'Keunggulan', 'keunggulan'],
     ];
 @endphp
 <aside class="admin-sidebar p-3">
