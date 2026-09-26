@@ -1,0 +1,24 @@
+/* Bundle terpisah dari public.css agar Tailwind & Bootstrap tidak bentrok. */
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+:root {
+    --nb-red: #E53935;
+    --nb-ink: #111111;
+    --nb-paper: #F5F5F0;
+    --bs-border-radius: 0;
+    --bs-border-radius-sm: 0;
+    --bs-border-radius-lg: 0;
+}
+
+body.admin-body { background: var(--nb-paper); }
+.admin-shadow { box-shadow: 4px 4px 0 0 var(--nb-ink); }
+.btn { border-width: 2px; font-weight: 600; box-shadow: 3px 3px 0 0 var(--nb-ink); transition: transform .1s; }
+.btn:hover, .btn:focus { transform: translate(-1px, -1px); }
+.btn:active { transform: translate(1px, 1px); box-shadow: none !important; }
+.btn-danger, .btn-primary { border-color: var(--nb-ink); }
+.card, .table, .form-control, .form-select, .modal-content { border: 2px solid var(--nb-ink); }
+.admin-sidebar { width: 240px; border-right: 2px solid var(--nb-ink); background: #fff; }
+.admin-sidebar .nav-link { color: var(--nb-ink); font-weight: 600; border-left: 4px solid transparent; }
+.admin-sidebar .nav-link.active { background: #FFD93D; border-left-color: var(--nb-ink); }
+.stat-card { border: 2px solid var(--nb-ink); box-shadow: 4px 4px 0 0 var(--nb-ink); }
+@media (max-width: 767.98px) { .admin-sidebar { width: 100%; border-right: 0; border-bottom: 2px solid var(--nb-ink); } }

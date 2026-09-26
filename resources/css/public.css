@@ -1,0 +1,41 @@
+@import "tailwindcss";
+@source "../views";
+@source "../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php";
+
+@theme {
+    --color-brand: #E53935;
+    --color-brand-dark: #B71C1C;
+    --color-ink: #111111;
+    --color-paper: #F5F5F0;
+    --color-sun: #FFD93D;
+    --color-sky: #4D96FF;
+    --color-leaf: #6BCB77;
+    --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+    --shadow-nb: 6px 6px 0 0 #111111;
+    --shadow-nb-sm: 3px 3px 0 0 #111111;
+    --shadow-nb-lg: 10px 10px 0 0 #111111;
+}
+
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+
+@layer components {
+    .nb-card { @apply border-[3px] border-ink bg-white shadow-nb transition-all duration-150; }
+    a.nb-card:hover { @apply -translate-x-1 -translate-y-1 shadow-nb-lg; }
+    .nb-btn {
+        @apply inline-flex items-center justify-center gap-2 border-[3px] border-ink bg-brand px-5 py-2.5 font-bold text-white shadow-nb-sm transition-all duration-150;
+        @apply hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-nb active:translate-x-0.5 active:translate-y-0.5 active:shadow-none;
+    }
+    .nb-btn-light { @apply bg-white text-ink; }
+    .nb-tag { @apply inline-block border-[3px] border-ink px-3 py-0.5 text-sm font-bold; }
+    .nb-input { @apply border-[3px] border-ink bg-white px-3 py-2 font-medium focus:outline-none focus:ring-4 focus:ring-sun; }
+}
+/* Tambahkan blok berikut ke akhir resources/css/public.css (Tahap 4) */
+.reveal { opacity: 0; transform: translateY(16px); transition: opacity .5s ease, transform .5s ease; }
+.reveal-visible { opacity: 1; transform: none; }
+
+.thumb-zoom { overflow: hidden; }
+.thumb-zoom img { transition: transform .3s ease; }
+.thumb-zoom:hover img { transform: scale(1.06); }
+
+button[data-lightbox-index] { cursor: zoom-in; }

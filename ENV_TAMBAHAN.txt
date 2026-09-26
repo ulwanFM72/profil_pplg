@@ -1,0 +1,3 @@
+# Tambahkan / pastikan baris berikut ada di .env Anda:
+FILESYSTEM_DISK=public
+APP_NAME="Program Keahlian SMK"
