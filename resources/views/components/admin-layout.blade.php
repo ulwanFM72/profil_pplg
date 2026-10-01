@@ -22,7 +22,7 @@
                     @csrf
                     <button class="btn btn-outline-dark btn-sm">Keluar ({{ auth()->user()->name }})</button>
                 </form>
-            </nav>
+            </nav>.
 
             <main class="p-3 p-md-4">
                 <h1 class="h3 fw-bold mb-4">{{ $title }}</h1>

@@ -11,7 +11,7 @@
         </dl>
     </x-section>
 
-    @if ($program->sejarah)
+    @if ($program->sejarah).
     <x-section title="Sejarah">
         <p class="mb-10 max-w-prose text-lg leading-relaxed">{!! nl2br(e($program->sejarah->narasi)) !!}</p>
 
@@ -51,7 +51,7 @@
             <x-thumb :src="$program->kepala->image_url" :alt="$program->kepala->nama" class="aspect-square h-full border-b-[3px] border-ink sm:border-b-0 sm:border-r-[3px]" />
             <div class="p-6">
                 <p class="nb-tag bg-brand text-white">{{ $program->kepala->jabatan }}</p>
-                <h3 class="mt-3 text-2xl font-extrabold">{{ $program->kepala->nama }} <span class="text-base font-bold">{{ $program->kepala->gelar }}</span></h3>
+                <h3 class="mt-3 text-2xl font-extrabold">{{ $program->kepala->nama }} <span class="text-xl font-bold">{{ $program->kepala->gelar }}</span></h3>
                 <p class="mt-2">{{ $program->kepala->deskripsi }}</p>
             </div>
         </div>
