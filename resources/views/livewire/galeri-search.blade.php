@@ -22,4 +22,4 @@
     </div>
 
     <div class="mt-8">{{ $items->links() }}</div>
-</div>
+</div>.

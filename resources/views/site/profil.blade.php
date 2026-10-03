@@ -8,7 +8,7 @@
             ] as $label => $value)
                 <div class="nb-card p-4"><dt class="text-sm font-bold uppercase text-brand">{{ $label }}</dt><dd class="mt-1 text-xl font-extrabold">{{ $value ?: '-' }}</dd></div>
             @endforeach
-        </dl>
+        </dl>.
     </x-section>
 
     @if ($program->sejarah).

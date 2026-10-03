@@ -34,5 +34,5 @@
             <li><a href="{{ route($route) }}" class="block border-b-2 border-ink/20 py-3 font-bold {{ request()->routeIs($pattern) ? 'text-brand' : '' }}">{{ $label }}</a></li>
         @endforeach
         <li><button type="button" data-open-login class="block w-full py-3 text-left font-bold">Login Admin</button></li>
-    </ul>
+    </ul>.
 </header>
