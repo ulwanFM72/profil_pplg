@@ -10,7 +10,7 @@
         <div class="mb-4 flex items-center justify-between">
             <h2 id="login-modal-title" class="text-xl font-extrabold">Login Admin</h2>
             <button type="button" id="login-modal-close" class="nb-btn nb-btn-light px-3 py-1" aria-label="Tutup modal login">✕</button>
-        </div>
+        </div>.
 
         @if ($errors->has('username'))
             <div class="mb-4 border-[3px] border-ink bg-brand p-3 text-sm font-bold text-white" role="alert">
