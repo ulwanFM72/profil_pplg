@@ -15,7 +15,7 @@
                 @endif
             </div>
         </div>
-    </x-section>.
+    </x-section>
     @if ($lab->assets->isNotEmpty())
         <x-section title="Peralatan di Lab Ini">@include('site.partials.asset-grid', ['assets' => $lab->assets])</x-section>
     @endif
