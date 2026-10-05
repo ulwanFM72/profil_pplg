@@ -8,5 +8,5 @@
         </nav>
         @include('site.partials.asset-grid', ['assets' => $assets])
         <div class="mt-8">{{ $assets->links() }}</div>
-    </x-section>.
+    </x-section>
 </x-public-layout>

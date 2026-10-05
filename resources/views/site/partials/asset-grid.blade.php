@@ -9,7 +9,7 @@
                 <p class="text-sm">{{ $a->jumlah }} unit @if ($a->tahun_pengadaan) · {{ $a->tahun_pengadaan }} @endif</p>
                 <span class="nb-tag mt-2 {{ $badge[$a->kondisi] }}">{{ ucfirst($a->kondisi) }}</span>
             </div>
-        </article>.
+        </article>
     @empty
         <p class="nb-card col-span-full p-8 text-center font-bold">Belum ada asset.</p>
     @endforelse
