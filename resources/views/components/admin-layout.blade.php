@@ -12,12 +12,6 @@
 
         <div class="flex-grow-1">
             <nav class="d-flex align-items-center justify-content-between border-bottom border-2 border-dark bg-white px-3 py-2">
-                <!-- <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb mb-0">
-                        <li class="breadcrumb-item"><a href="{{ route('admin.dashboard') }}">Admin</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">{{ $title }}</li>
-                    </ol>
-                </nav> -->
                 <form method="POST" action="{{ route('admin.logout') }}">
                     @csrf
                     <button class="btn btn-outline-dark btn-sm">Keluar ({{ auth()->user()->name }})</button>
