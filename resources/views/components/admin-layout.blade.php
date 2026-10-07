@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ $title }} · Admin {{ config('app.name') }}</title>
     @vite(['resources/css/admin.css', 'resources/js/admin.js'])
-</head>.
+</head>
 <body class="admin-body">
     <div class="d-flex flex-column flex-md-row min-vh-100">
         @include('partials.admin-sidebar')
