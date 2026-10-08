@@ -20,4 +20,4 @@
     @include('partials.login-modal')
     @livewireScripts
 </body>
-</html>
+</html>.
