@@ -29,4 +29,4 @@
         </div>
     </div>
     <div class="mt-3">{{ $rows->links() }}</div>
-</x-admin-layout>.
+</x-admin-layout>
