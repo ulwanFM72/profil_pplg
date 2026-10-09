@@ -43,4 +43,4 @@
             <a href="{{ route('admin.keunggulan.index') }}" class="btn btn-outline-secondary">Batal</a>
         </div>
     </form>
-</x-admin-layout>
+</x-admin-layout>.
