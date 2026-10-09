@@ -19,4 +19,4 @@
     @empty
         <p class="nb-card p-8 text-center font-bold">Belum ada foto.</p>
     @endforelse
-</div>
+</div>.
