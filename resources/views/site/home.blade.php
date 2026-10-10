@@ -60,4 +60,4 @@
             <a href="{{ route('profil') }}" class="nb-btn nb-btn-light mt-8 text-ink">Baca Profil Lengkap</a>
         </div>
     </section>
-</x-public-layout>.
+</x-public-layout>
