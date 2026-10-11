@@ -6,4 +6,4 @@
     <p>{{ $exception->getMessage() ?: 'Silakan hubungi administrator.' }}</p>
     <p><a href="{{ route('admin.login') }}">Masuk sebagai admin</a></p>
 </body>
-</html>
+</html>.

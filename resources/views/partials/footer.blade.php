@@ -6,4 +6,4 @@
         </div>
         <p class="text-sm text-white/70">© {{ date('Y') }} {{ $program?->nama }}. Seluruh hak dilindungi.</p>
     </div>
-</footer>
+</footer>.

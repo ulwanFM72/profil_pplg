@@ -12,4 +12,4 @@
     @empty
         <p class="nb-card col-span-full p-8 text-center font-bold">Belum ada laboratorium.</p>
     @endforelse
-</div>
+</div>.
