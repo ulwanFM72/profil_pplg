@@ -5,4 +5,4 @@
     <input type="file" id="{{ $name }}" name="{{ $name }}" accept="image/jpeg,image/png,image/webp" class="form-control @error($name) is-invalid @enderror">
     <div class="form-text">JPG, JPEG, PNG, atau WEBP, maksimal 2 MB.</div>
     @error($name)<div class="invalid-feedback d-block">{{ $message }}</div>@enderror
-</div>.
+</div>
