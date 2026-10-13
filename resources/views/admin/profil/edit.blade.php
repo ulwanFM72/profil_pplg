@@ -75,4 +75,4 @@
         </div>
         <button class="btn btn-dark mt-4">Simpan Perubahan</button>
     </form>
-</x-admin-layout>
+</x-admin-layout>.
