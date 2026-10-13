@@ -19,4 +19,4 @@
     @if ($lab->assets->isNotEmpty())
         <x-section title="Peralatan di Lab Ini">@include('site.partials.asset-grid', ['assets' => $lab->assets])</x-section>
     @endif
-</x-public-layout>
+</x-public-layout>.
