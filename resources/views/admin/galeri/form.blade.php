@@ -38,4 +38,4 @@
             <a href="{{ route('admin.galeri.index') }}" class="btn btn-outline-secondary">Batal</a>
         </div>
     </form>
-</x-admin-layout>
+</x-admin-layout>.
