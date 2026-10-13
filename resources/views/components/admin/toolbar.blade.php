@@ -7,4 +7,4 @@
     </div>
     {{ $slot }}
     <div class="col-sm-auto"><button class="btn btn-dark">Terapkan</button></div>
-</form>
+</form>.
