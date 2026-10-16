@@ -32,4 +32,4 @@
             asset: { labels: @json($assetPerKategori->keys()), values: @json($assetPerKategori->values()) },
         };
     </script>
-</x-admin-layout>.
+</x-admin-layout>

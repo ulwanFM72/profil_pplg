@@ -38,4 +38,4 @@
         <p class="text-center mt-3"><a href="{{ route('beranda') }}" class="text-dark">← Kembali ke situs</a></p>
     </main>
 </body>
-</html>.
+</html>
