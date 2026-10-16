@@ -57,4 +57,4 @@
         </div>
     </x-section>
     @endif
-</x-public-layout>.
+</x-public-layout>
