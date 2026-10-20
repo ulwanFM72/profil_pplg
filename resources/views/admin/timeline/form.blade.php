@@ -27,4 +27,4 @@
             <a href="{{ route('admin.sejarah.edit') }}" class="btn btn-outline-secondary">Batal</a>
         </div>
     </form>
-</x-admin-layout>.
+</x-admin-layout>
