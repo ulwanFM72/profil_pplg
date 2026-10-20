@@ -13,4 +13,4 @@
     @empty
         <p class="nb-card col-span-full p-8 text-center font-bold">Belum ada asset.</p>
     @endforelse
-</div>.
+</div>

@@ -2,4 +2,4 @@
     <x-section title="Galeri">
         <livewire:galeri-search />
     </x-section>
-</x-public-layout>.
+</x-public-layout>
